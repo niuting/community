@@ -1,6 +1,6 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn/
 !**/src/main/**
 !**/src/test/**
 
@@ -21,7 +21,6 @@ target/
 *.log
 mvnw
 mvnw.cmd
-HELP.md
 
 ### NetBeans ###
 /nbproject/private/
