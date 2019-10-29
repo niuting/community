@@ -9,3 +9,7 @@
 
 ## 工具
 [Visual Paradigm](https://www.visual-paradigm.com)
+
+[spring boot连接数据库](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/html/boot-features-sql.html#boot-features-embedded-database-support)
+
+## sql
