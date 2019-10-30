@@ -61,18 +61,6 @@
             <artifactId>c3p0</artifactId>
             <version>0.9.5.4</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
-<!--        <dependency>
-            <groupId>c3p0</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.1.2</version>
-        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-<!--        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>5.2.0.RELEASE</version>
-        </dependency>-->
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
@@ -92,6 +80,23 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.0.7</version>
+                <configuration>
+                    <url>jdbc:mysql://127.0.0.1:3307/community</url>
+                    <user>root</user>
+                    <password>niuting</password>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.44</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
